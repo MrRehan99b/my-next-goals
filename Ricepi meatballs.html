@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)http://127.0.0.1:5500/222/class%201/contact.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricepi</title>
+</head>
+<body>
+     <h1>Meatballs Ricepi</h1>
+     <h2>Ingredients:</h2>
+     <li>1 pound ground meet (beef,pork,or a mix of boht)</li>
+     <li>1/2 cup greated parmesan cheese</li>
+     <li>1 Egg</li>
+     <li>1/4 cup chopped onion</li>
+     <li>2 cloves garlic,minced</li>
+     <li>1 tablespoon oil</li>
+     <li>Salt and papper to test</li>
+     <li>Optional:herbs like parsley,basil,or oreganno</li>
+     <h2>Instructions:</h2>
+     <ol>
+        <li>Preheat oven to 400F(200C)</li>
+        <li>Mix all ingredients in a bowl until just combined</li>
+        <li>Use your hands to shape into small balls (about 11/2 inches in diameter)</li>
+        <li>Place meatballs on a baking sheet lined with parchment paper</li>
+        <li>Drizzle with oil and gently roll to coat evenly</li>
+        <li>Bake for 15-20 minutes or until cooked through</li>
+     </ol>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
